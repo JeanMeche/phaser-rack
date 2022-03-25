@@ -7,13 +7,12 @@ export class RackHeaderContainer extends Phaser.GameObjects.Container {
   private rackUsage: number = 1402;
   private rackTotalPower: number = 5530;
 
-  public constructor(scene: Scene, width: number) {
+  public constructor(scene: Scene) {
     super(scene);
-    this.width = width;
+    this.width = RackContainer.rackWidth;
+    this.height = RackContainer.rackInformationContainerHeight;
 
-    this.rackInformationContainer = new Phaser.GameObjects.Graphics(this.scene);
-
-    this.rackInformationContainer
+    this.rackInformationContainer = new Phaser.GameObjects.Graphics(this.scene)
       .fillStyle(0x424e54)
       .fillRect(0, 0, this.width, RackContainer.rackInformationContainerHeight);
 

@@ -10,6 +10,7 @@
  */
 
 import * as Phaser from 'phaser';
+import * as DebugDrawPlugin from 'phaser-plugin-debug-draw';
 import { RackScene } from './rack.scene';
 
 export class PhaserGame extends Phaser.Game {
@@ -41,11 +42,20 @@ export class PhaserGame extends Phaser.Game {
         },
       },
       scene: [
-        RackScene,
+        RackScene
         // ScrollBarScene,
         // CameraScene,
         //FeedScene
       ],
+      plugins: {
+        scene: [
+          {
+            key: 'DebugDrawPlugin',
+            plugin: DebugDrawPlugin,
+            mapping: 'debugDraw',
+          },
+        ],
+      },
     });
     this.scene.start(new RackScene());
   }

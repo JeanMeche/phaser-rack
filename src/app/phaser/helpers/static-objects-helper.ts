@@ -1,7 +1,7 @@
-import { AssetType, IAsset } from '../container/asset.container';
-import { GroupName } from '../container/ePDU-groupe.container';
-import { OutletStatus } from '../container/outlet.container';
-import { IRackEPDU } from '../scene/feed.scene';
+import { AssetType, IAsset } from '../containers/asset.container';
+// import { GroupName } from '../container/ePDU-groupe.container';
+// import { OutletStatus } from '../containers/outlet.container';
+// import { IRackEPDU } from '../feed.scene';
 
 const rackConfig: Array<IAsset> = [
     {
@@ -213,315 +213,315 @@ const rackConfig: Array<IAsset> = [
     },
 ];
 
-const rackEPDUs: Array<IRackEPDU> = [
-    {
-        feedName: 'Feed A',
-        ePDU: [
-            {
-                id: 1,
-                group: [
-                    {
-                        id: 1,
-                        groupName: GroupName.A,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
+// const rackEPDUs: Array<IRackEPDU> = [
+//     {
+//         feedName: 'Feed A',
+//         ePDU: [
+//             {
+//                 id: 1,
+//                 group: [
+//                     {
+//                         id: 1,
+//                         groupName: GroupName.A,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
 
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 7,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 8,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 9,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                    {
-                        id: 2,
-                        groupName: GroupName.B,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 7,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 8,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 9,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                ],
-            },
-            {
-                id: 2,
-                group: [
-                    {
-                        id: 1,
-                        groupName: GroupName.C,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                    {
-                        id: 2,
-                        groupName: GroupName.D,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 7,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 8,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        feedName: 'Feed B',
-        ePDU: [
-            {
-                id: 1,
-                group: [
-                    {
-                        id: 1,
-                        groupName: GroupName.A,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 7,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 8,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 9,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                     {
+//                         id: 2,
+//                         groupName: GroupName.B,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 7,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 8,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 9,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                 ],
+//             },
+//             {
+//                 id: 2,
+//                 group: [
+//                     {
+//                         id: 1,
+//                         groupName: GroupName.C,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                     {
+//                         id: 2,
+//                         groupName: GroupName.D,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 7,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 8,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                 ],
+//             },
+//         ],
+//     },
+//     {
+//         feedName: 'Feed B',
+//         ePDU: [
+//             {
+//                 id: 1,
+//                 group: [
+//                     {
+//                         id: 1,
+//                         groupName: GroupName.A,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
 
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 7,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                    {
-                        id: 2,
-                        groupName: GroupName.B,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                ],
-            },
-            {
-                id: 2,
-                group: [
-                    {
-                        id: 1,
-                        groupName: GroupName.C,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                    {
-                        id: 2,
-                        groupName: GroupName.D,
-                        outlet: [
-                            {
-                                id: 1,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 2,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 3,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 4,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 5,
-                                status: OutletStatus.on,
-                            },
-                            {
-                                id: 6,
-                                status: OutletStatus.on,
-                            },
-                        ],
-                    },
-                ],
-            },
-        ],
-    },
-];
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 7,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                     {
+//                         id: 2,
+//                         groupName: GroupName.B,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                 ],
+//             },
+//             {
+//                 id: 2,
+//                 group: [
+//                     {
+//                         id: 1,
+//                         groupName: GroupName.C,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                     {
+//                         id: 2,
+//                         groupName: GroupName.D,
+//                         outlet: [
+//                             {
+//                                 id: 1,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 2,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 3,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 4,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 5,
+//                                 status: OutletStatus.on,
+//                             },
+//                             {
+//                                 id: 6,
+//                                 status: OutletStatus.on,
+//                             },
+//                         ],
+//                     },
+//                 ],
+//             },
+//         ],
+//     },
+// ];
 
 export class StaticObjectsHelper {
     public static getRackConfig(): Array<IAsset> {
         return rackConfig;
     }
 
-    public static getRackEpdus(): Array<IRackEPDU> {
-        return rackEPDUs;
-    }
+    // public static getRackEpdus(): Array<IRackEPDU> {
+    //     return rackEPDUs;
+    // }
 }

@@ -22,8 +22,7 @@ export class RackContainer extends Phaser.GameObjects.Container {
   public static rackInformationContainerHeight = 100 * window.devicePixelRatio;
   public static rackInformationContainerPadding = 20 * window.devicePixelRatio;
 
-  public rackInformationContainerWidth =
-    AssetContainer.width + UrackContainer.width * 2;
+  public static rackWidth = AssetContainer.width + UrackContainer.width * 2;
   // this.scene.rackPadding * 2;
   // private rackInformationContainer!: Phaser.GameObjects.Graphics;
   // private availableRackUCount: number = 29;
@@ -40,7 +39,7 @@ export class RackContainer extends Phaser.GameObjects.Container {
       .fillRoundedRect(
         0,
         0,
-        this.rackInformationContainerWidth,
+        this.width,
         120 * scene.rackHeight +
           scene.rackUPadding * (scene.rackHeight - 2) +
           RackContainer.rackInformationContainerHeight +
@@ -48,14 +47,9 @@ export class RackContainer extends Phaser.GameObjects.Container {
         6
       );
 
-    const header = new RackHeaderContainer(
-      scene,
-      this.rackInformationContainerWidth
-    );
-
     this.add([
       graphics,
-      header,
+      // header,
       // this.rackInformationContainer,
       // rackUCount,
       // rackUCountHeader,

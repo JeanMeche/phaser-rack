@@ -32,8 +32,8 @@ export class UrackContainer extends Phaser.GameObjects.Container {
 
     this.text = new Phaser.GameObjects.Text(
       scene,
-      this.width / 2,
-      this.height / 2,
+      0,
+      0,
       uName,
       textStyle
     ).setOrigin(0.5);
@@ -43,7 +43,7 @@ export class UrackContainer extends Phaser.GameObjects.Container {
       width: this.width,
       height: this.height,
       fillColor: fillColorOfU,
-    }).setOrigin(0);
+    });
 
     this.add([this.rect, this.text]);
   }
